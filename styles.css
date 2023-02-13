@@ -1,0 +1,378 @@
+*, ::before, ::after{
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.5;
+    box-sizing: inherit;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-family: "FontAwesome";
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+ul, menu, dir {
+    padding: 0;
+    display: block;
+    list-style-type: none;
+    background-color: white;
+    margin-block-start: 2em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+header{
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 46px;
+    position: fixed;
+    background-color: black;
+}
+
+a.menu-nav{
+    color: white;
+    font-weight: 200;
+    text-align: center;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 12px 24px!important;
+}
+
+div.hidden{
+    position: absolute;
+    display: inline-block;
+}
+
+div.moreList{
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+div.hidden:hover > div.moreList{
+    display: block;
+}
+
+div.moreList a{
+    width: 100%;
+    border: none;
+    color: #000;
+    display: block;
+    padding: 8px 16px;
+    text-align: left;
+    white-space: normal;
+    background-color: #fff;
+}
+
+div.moreList a:hover{
+    color: #000!important;
+    background-color: #ccc!important;
+}
+
+a#searchBar{
+    display: block;
+    float: right !important;
+}
+
+a.menu-nav:hover{
+    color: black;
+    background-color: #ccc;
+}
+
+a#searchBar:hover{
+    color: white;
+    background-color: #f44336;
+}
+
+div.slideshow-image{
+    width: 100%;
+    max-width: 2000px;
+    margin: auto;
+    margin-top: 46px;
+    position: relative;
+}
+
+img{
+    width: 100%;
+    border-style: none;
+    vertical-align: middle;
+}
+
+div.text{
+    left: 50%;
+    bottom: 0;
+    color: white;
+    display: block;
+    text-align: center;
+    position: absolute;
+    padding-top: 32px!important;
+    padding-bottom: 32px!important;
+    background-color: transparent;
+    transform: translate(-50%,0%);
+}
+
+h3.slideText{
+    margin: 10px 0;
+    font-size: 24px; 
+    font-weight: 400;
+    background-color: transparent; 
+}
+
+p.slidePara{
+    margin: 15px 0;
+    line-height: 1.5;
+    background-color: transparent; 
+}
+
+div.the-band{
+    color: #000;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 64px!important;
+    padding-bottom: 64px!important;
+}
+
+h2.theBandTitle{
+    margin: 10px 0;
+    font-size: 30px;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+p.theBandItalic{
+    opacity: 0.60;
+    margin: 15px 0;
+    line-height: 1.5;
+    text-align: center;
+    font-style: italic;
+}
+
+p.theBandPara{
+    margin: 15px 0;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+div.theBandName{
+    display: flex;
+    padding: 32px 0;
+}
+
+div.theBandNameContent{
+    width: 33.33333%;
+    float: left;
+    font-weight: 100;
+    text-align: center;
+}
+
+img.theBandNameImg{
+    width: 60%;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border-style: none;
+    vertical-align: middle;
+}
+
+div.the-tour{
+    color: #fff!important;
+    background-color: #000!important;
+}
+
+div.tourContent{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+}
+
+h2.tourTitle{
+    margin: 10px 0;
+    font-size: 30px;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+p.tourSubTitle{
+    opacity: 0.60;
+    margin: 15px 0;
+    line-height: 1.5;
+    text-align: center;
+    font-style: italic;
+}
+
+ul.tourList{
+    color: #757575;
+    border: 1px solid black;
+}
+
+li.tourListLi{
+    padding: 8px 16px;
+    display: list-item;
+    text-align: match-parent;
+    border-bottom: 1px solid #ddd;
+}
+
+span.soldOut{
+    color: white;
+    padding: 0 8px;
+    margin-left: 16px;
+    background-color: red;
+    display: inline-block;
+}
+
+span.tourListNumber{
+    float: right;
+    color: white;
+    padding: 0 8px;
+    margin-right: 16px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+div.tourDetail{
+    display: flex;
+    position: relative;
+    padding: 32px 8px;
+    margin: 0 -16px;
+}
+
+div.tourDetailContent{
+    float: left;
+    display: block;
+    padding: 0 8px;
+    width: 33.33333%;
+    margin-bottom: 16px;
+}
+
+div.tourDetailDescrip{
+    color: black;
+    padding: 0.01em 16px;
+    background-color: white;
+}
+
+h2.tourDetailTilte{
+    margin: 15px 0;
+}
+
+span.tourDetailDay{
+    opacity: 0.60;
+    margin: 15px 0;
+}
+
+p.tourDetailPara{
+    margin: 15px 0;
+}
+
+button.buyTicket{
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    color: white;
+    background-color: black;
+    border: none;
+}
+
+button.buyTicket:hover{
+    color: #000!important;
+    background-color: #ccc!important;
+}
+
+div.the-contact{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+    color: black;
+    background-color: white;
+}
+
+h2.theContactTitle{
+    margin: 10px 0;
+    font-size: 30px;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+p.theContactSubTitle{
+    opacity: 0.60;
+    margin: 15px 0;
+    line-height: 1.5;
+    text-align: center;
+    font-style: italic;
+}
+
+div.theContactBox{
+    display: flex;
+    padding: 32px 0;
+}
+
+div.leftSide{
+    width: 49.99999%;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+div.rightSide{
+    width: 49.99999%;
+    float: left;
+}
+
+div.rightSideTop{
+    display: flex;
+    padding: 0 8px;
+    margin: 0 -16px 8px -16px;
+}
+
+input.inputContact{
+    padding: 8px;
+    margin: 0 8px;
+    width: 49.99999%;
+    border: 1px solid #ccc;
+}
+
+input#messageInput{
+    margin: 0;
+    width: 96%;
+}
+
+button.sentButton{
+    float: right;
+    border: none;
+    color: white;
+    margin: 16px 0;
+    padding: 8px 16px;
+    background-color: black;
+    text-transform: uppercase;
+}
+
+footer{
+    padding: 64px 16px;
+    text-align: center;
+    background-color: white;
+}
+
+p.powerBy{
+    margin: 15px 0;
+    font-size: 15px!important;
+}
+
+.fa:hover{
+    opacity: 0.60;
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/d8ded057c6.css" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="" class="menu-nav" id="home">Home</a>
+            <a href="" class="menu-nav" id="band">Band</a>
+            <a href="" class="menu-nav" id="tour">Tour</a>
+            <a href="" class="menu-nav" id="contact">Contact</a>
+            <div class="hidden">
+                <a href="" class="menu-nav" id="more" style="position: relative;">
+                    More
+                    <i class="fa fa-caret-down"></i>
+                </a>
+                <div class="moreList">
+                    <a href="">Merchandise</a>
+                    <a href="">Extras</a>
+                    <a href="">Media</a>
+                </div>
+            </div>
+                <a href="" class="menu-nav" id="searchBar">
+                    <i class="fa fa-search"></i>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <div class="slideshow-image">
+            <div class="mySlides" style="display: none;">
+                <img src="https://www.w3schools.com/w3images/chicago.jpg">
+                <div class="text">
+                    <h3 class="slideText">Chicago</h3>
+                    <p class="slidePara">Thank you, Chicago - A night we won't forget.</p>
+                </div>
+            </div>
+            <div class="mySlides" style="display: none;">
+                <img src="https://www.w3schools.com/w3images/la.jpg">
+                <div class="text">
+                    <h3 class="slideText">Los Angeles</h3>
+                    <p class="slidePara">We had the best time playing at Venice Beach!</p>
+                </div>
+            </div>
+            <div class="mySlides" style="display: none;">
+                <img src="https://www.w3schools.com/w3images/ny.jpg">
+                <div class="text">
+                    <h3 class="slideText">New York</h3>
+                    <p class="slidePara">The atmosphere in New York is lorem ipsum.</p>
+                </div>
+            </div>
+
+            <script>
+                let slideIndex = 0;
+                showSlides();
+                
+                function showSlides() {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}  
+                  slides[slideIndex-1].style.display = "block";  
+                  setTimeout(showSlides, 4000); // Change image every 4 seconds
+                }
+                </script>
+        </div>
+        <div class="the-band">
+            <h2 class="theBandTitle">The Band</h2>
+            <p class="theBandItalic">We love music</p>
+            <p class="theBandPara">
+                We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="theBandName">
+                <div class="theBandNameContent">
+                    <p st>Name</p>
+                    <img class="theBandNameImg" src="https://www.w3schools.com/w3images/bandmember.jpg" alt="">
+                </div>
+                <div class="theBandNameContent">
+                    <p>Name</p>
+                    <img class="theBandNameImg" src="https://www.w3schools.com/w3images/bandmember.jpg" alt="">
+                </div>
+                <div class="theBandNameContent">
+                    <p>Name</p>
+                    <img class="theBandNameImg" src="https://www.w3schools.com/w3images/bandmember.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="the-tour">
+            <div class="tourContent">
+                <h2 class="tourTitle">TOUR DATES</h2>
+                <p class="tourSubTitle">Remember to book your tickets!</p>
+                <ul class="tourList">
+                    <li class="tourListLi">
+                        September
+                        <span class="soldOut">Sold out</span>
+                    </li>
+                    <li class="tourListLi">
+                        October
+                        <span class="soldOut">Sold out</span>
+                    </li>
+                    <li class="tourListLi">
+                        November
+                        <span class="tourListNumber">3</span>
+                    </li>
+                </ul>
+                <div class="tourDetail">
+                    <div class="tourDetailContent">
+                        <img class="tourDetailImg" src="https://www.w3schools.com/w3images/newyork.jpg" alt="">
+                        <div class="tourDetailDescrip">
+                            <h2 class="tourDetailTilte">New York</h2>
+                            <span class="tourDetailDay">Fri 27 Nov 2016</span>
+                            <p class="tourDetailPara">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="buyTicket">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="tourDetailContent">
+                        <img class="tourDetailImg" src="https://www.w3schools.com/w3images/paris.jpg" alt="">
+                        <div class="tourDetailDescrip">
+                            <h2 class="tourDetailTilte">Paris</h2>
+                            <span class="tourDetailDay">Sat 28 Nov 2016</span>
+                            <p class="tourDetailPara">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="buyTicket">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="tourDetailContent">
+                        <img class="tourDetailImg" src="https://www.w3schools.com/w3images/sanfran.jpg" alt="">
+                        <div class="tourDetailDescrip">
+                            <h2 class="tourDetailTilte">San Francisco</h2>
+                            <span class="tourDetailDay">Sun 29 Nov 2016</span>
+                            <p class="tourDetailPara">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="buyTicket">Buy Tickets</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="the-contact">
+            <h2 class="theContactTitle">CONTACT</h2>
+            <p class="theContactSubTitle">Fan? Drop a note!</p>
+            <div class="theContactBox">
+                <div class="leftSide">
+                    <i class="fa fa-map-marker" style="width:30px"></i>
+                    Chicago, US
+                    <br>
+                    <i class="fa fa-phone" style="width:30px"></i>
+                        Phone: +00 151515
+                    <br>
+                    <i class="fa fa-envelope" style="width:30px"> </i>
+                        Email: mail@mail.com
+                    <br>
+                </div>
+                <div class="rightSide">
+                    <form action="">
+                        <div class="rightSideTop">
+                            <input type="name" class="inputContact" id="nameInput" placeholder="Name">
+                            <input type="email" class="inputContact" id="emailInput" placeholder="Email">
+                        </div>
+                        <input type="name" class="inputContact" id="messageInput" placeholder="Message">
+                        <button class="sentButton">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="the-img">
+            <img src="https://www.w3schools.com/w3images/map.jpg" style="filter: grayscale(50%); height: auto;" alt="">
+        </div>
+    </main>
+    <footer>
+        <div class="logo">
+            <i class="fa fa-facebook-official"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+        <p class="powerBy">
+            Powered by 
+            <a href="" style="text-decoration-line: underline; background-color: transparent; color: inherit; cursor: auto;">
+                w3.css
+            </a>
+        </p>
+    </footer>
+</body>
+</html>
